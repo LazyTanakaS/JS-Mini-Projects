@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+
+* {
+  font-family: "Poppins";
+}
+
+.container {
+  margin: 10%;
+  text-align: left;
+  display: flex;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.amount input {
+  width: 260px;
+  height: 30px;
+}
+
+.percent {
+  display: flex;
+  justify-content: start;
+}
+
+.percent button {
+  background-color: #5e60ce;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 50px;
+  margin: 2px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.percent button:hover {
+  background-color: #393a80;
+}
+
+.percent button.active {
+  background-color: #393a80;
+}
+
+.calculate,
+.reset {
+  display: flex;
+  justify-content: center;
+}
+
+.calculate button,
+.reset button {
+  background-color: #5e60ce;
+  border: none;
+  color: #fff;
+  margin-top: 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.calculate button:hover,
+.reset button:hover {
+  background-color: #393a80;
+}
+
+.result {
+  margin-top: 15px;
+}
+
+.total {
+  margin-top: 15px;
+}
