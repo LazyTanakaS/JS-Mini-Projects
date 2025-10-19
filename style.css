@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+
+body {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+}
+
+.counter {
+  background-color: #003f35;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.counter-numbers {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px auto;
+  border-radius: 50px;
+  padding: 10px;
+  max-width: 300px;
+}
+
+.counter-numbers h2 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.btn-minus,
+.btn-plus {
+  background-color: #a221ff;
+  font-family: "Poppins";
+  width: 70px;
+  height: 70px;
+  font-size: 48px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-weight: 300;
+  transition: transform 0.2s;
+}
+
+.btn-minus:hover,
+.btn-plus:hover,
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-minus:active,
+.btn-plus:active,
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-plus {
+  margin-left: 0;
+}
+
+.btn-minus {
+  margin-right: 0;
+}
+
+.counter-reset button {
+  font-family: "Poppins";
+  background-color: #a221ff;
+  color: #fff;
+  border-radius: 25px;
+  width: 240px;
+  height: 80px;
+  font-size: 48px;
+  text-align: center;
+}
