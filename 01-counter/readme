@@ -1,0 +1,25 @@
+# Counter
+
+Simple counter with buttons to increase, decrease, and reset the value.
+
+## Features
+
+- Increment counter by 1
+- Decrement counter by 1
+- Reset counter to 0
+- Number color changes:
+- Green for positive values
+- Red for negative values
+- Black for zero
+
+## What I Learned
+
+- `addEventListener()` - handling events
+- `textContent` - changing element text
+- `style.color` - changing styles via JS
+- Conditional statements (if/else)
+- Working with variables
+
+## How to Run
+
+Simply open `index.html` in your browser.

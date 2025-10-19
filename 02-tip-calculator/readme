@@ -1,0 +1,33 @@
+# Tip Calculator
+
+Calculator for computing restaurant tips and total bill amount.
+
+## Features
+
+- Enter bill amount
+- Select tip percentage (5%, 10%, 15%, 20%, 25%)
+- Automatic calculation of:
+- Tip amount
+- Total amount to pay
+- Reset all data
+- Highlight selected percentage
+
+## What I Learned
+
+- `parseFloat()` - converting string to number
+- `isNaN()` - checking for number
+- `.toFixed(2)` - rounding to 2 decimal places
+- `.classList.add/remove()` - working with CSS classes
+- User data validation
+- Working with input elements
+
+## How to Run
+
+Simply open `index.html` in your browser.
+
+## How to Use
+
+1. Enter bill amount
+2. Select tip percentage
+3. Click "=" to calculate
+4. Click "Reset" to clear
