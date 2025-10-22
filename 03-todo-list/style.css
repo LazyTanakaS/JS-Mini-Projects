@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+
+* {
+  background-color: #252525;
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.container {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 16 24px;
+}
+
+/* List style */
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+}
+
+.todo-container p {
+  flex: 1;
+  cursor: pointer;
+  margin: 0;
+  font-weight: 500;
+}
+
+.disabled {
+  text-decoration: line-through;
+  opacity: 0.6px;
+  color: gray;
+}
+
+li {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  margin: 10px 50px;
+  border-bottom: 1px solid #8b84ff;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.todo-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #6c63ff;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.todo-checkbox:hover {
+  border-color: #8b84ff;
+}
+
+.todo-checkbox:checked {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+}
+
+.todo-checkbox:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Input Field */
+.input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.input-field {
+  flex: 1;
+  width: 1000px;
+  max-width: 1000px;
+  height: 30px;
+  border-radius: 10px;
+  border-color: #fff;
+}
+
+.btn {
+  width: 90px;
+  height: 36px;
+  border-radius: 5px;
+  background-color: #6c63ff;
+  border: none;
+  margin-left: 0;
+}
+
+.todo-container {
+  display: flex;
+  gap: 15px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+}
+
+.counter-container {
+  height: 2em;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+.counter-container p,
+.counter-container span {
+  align-self: center;
+  color: gray;
+}
+
+.counter-container button {
+  width: 90px;
+  height: 36px;
+  border-radius: 5px;
+  background-color: #6c63ff;
+  border: none;
+}
+
+.edit-input {
+  background-color: #333;
+  border: 2px solid #6c63ff;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  font-size: 15px;
+  width: 100%;
+}
+
+.edit-input:focus {
+  outline: none;
+  border-color: #8b84ff;
+}
