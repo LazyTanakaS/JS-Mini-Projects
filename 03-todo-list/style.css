@@ -31,7 +31,7 @@
 
 .disabled {
   text-decoration: line-through;
-  opacity: 0.6px;
+  opacity: 0.6;
   color: gray;
 }
 
@@ -120,6 +120,7 @@ ul {
   padding: 0;
   margin: 0;
   overflow: scroll;
+  max-height: 650px;
 }
 
 .counter-container {

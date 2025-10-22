@@ -54,7 +54,7 @@ function displayTask() {
   updateCouner();
 }
 
-function updateCouner() {
+function updateCounter() {
   const counterSpan = document.querySelector(".counter-container span");
   counterSpan.textContent = todo.length;
 }
