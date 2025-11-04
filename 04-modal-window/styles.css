@@ -9,6 +9,7 @@
 
 body {
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .window {
@@ -50,11 +51,15 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   width: 100%;
-  display: none;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5 ease;
 }
 
 .overlay.show {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal {
@@ -156,4 +161,15 @@ body {
 
 .color-second {
   color: var(--color-text-categories);
+}
+
+.modal-battery {
+  height: 25%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.modal-label {
+  font-size: 14px;
+  font-weight: 600;
 }
