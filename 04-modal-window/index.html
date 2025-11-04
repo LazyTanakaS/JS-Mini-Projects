@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Window</title>
+
+    <link rel="stylesheet" href="./variables.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="window">
+      <h2>Modal Window</h2>
+    </div>
+
+    <div class="buttons">
+      <button class="btn" id="infoImg">Open Image</button>
+      <button class="btn" id="infoAlert">Open Alert</button>
+      <button class="btn" id="infoCategories">Open Categories</button>
+      <button class="btn" id="infoBattery">Open Battery</button>
+      <button class="btn" id="infoContacts">Open Contacts</button>
+    </div>
+
+    <div class="overlay" id="overlay">
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+          <h3 class="modal-title">
+            “Pinterest” Would Like to Send You Notifications Similar to These
+          </h3>
+          <div class="model-categories">
+            <h4>
+              5 categories
+              <span class="color-second">></span>
+            </h4>
+            <p class="color-second">
+              Delivery Updates, Account, Deals, Recommended, Community
+            </p>
+          </div>
+          <img class="modal-image" src="./images/frame.png" alt="" />
+          <p class="modal-description">
+            Notifications may include alerts, sounds, and icon badges. These can
+            be configured in Settings.
+          </p>
+          <div class="spam">
+            <img src="./images/alert.png" alt="" />
+            <p>Frequently marked as spam</p>
+          </div>
+          <button class="modal-btn-first">Allow</button>
+          <button class="modal-btn-second">Allow in Scheduled Summary</button>
+          <button class="modal-btn-third">Don't Allow</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

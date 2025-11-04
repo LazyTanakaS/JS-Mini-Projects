@@ -1,0 +1,23 @@
+:root {
+  /* COLORS */
+  --color-bg-primary: #000;
+  --color-bg-transparent: rgba(0, 0, 0, 0.5);
+  --color-bg-modal: #b3b3b3;
+  --color-bg-modal-secondary: #a19f94;
+  --color-bg-button: #57a8ff;
+
+  --color-transparent: rgba(0, 0, 0, 0.1);
+
+  --color-text-confirm: #007aff;
+  --color-text-reject: #ff3b30;
+  --color-text-primary: #000000;
+  --color-text-secondart: #ffffff;
+  --color-text-categories: #6e7065;
+
+  /* GAPS */
+  --gap-xs: 15px;
+  --gap-s: 20px;
+  --gap-m: 25px;
+  --gap-l: 30px;
+  --gap-4xl: 45px;
+}
