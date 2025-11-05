@@ -1,0 +1,89 @@
+:root {
+  /* ===== COLORS - Background ===== */
+  --color-bg-primary: #252323;
+  --color-bg-secondary: #2a2a2a;
+  --color-bg-tertiary: #3a3a3a;
+  --color-bg-transparent: rgba(0, 0, 0, 0.5);
+
+  /* ===== COLORS - Text ===== */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b0b0b0;
+  --color-text-tertiary: #808080;
+
+  /* ===== COLORS - Accent ===== */
+  --color-accent-primary: #ad36cb;
+  --color-accent-secondary: #33e017;
+  --color-accent-hover: #8a2ba3;
+
+  /* ===== COLORS - Status ===== */
+  --color-success: #4caf50;
+  --color-error: #f44336;
+  --color-warning: #ff9800;
+  --color-info: #2196f3;
+
+  /* ===== GRADIENTS ===== */
+  --color-weather-card: linear-gradient(
+    145deg,
+    rgba(173, 54, 203, 1) 27%,
+    rgba(51, 51, 51, 1) 69%
+  );
+
+  --color-weather-history: linear-gradient(
+    180deg,
+    rgba(173, 54, 203, 1) 27%,
+    rgba(51, 51, 51, 1) 69%
+  );
+
+  /* ===== SHADOWS ===== */
+  --box-shadow-primary: rgba(0, 0, 0, 0.2);
+  --box-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --box-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --box-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+  --box-shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.25);
+
+  /* ===== BORDERS ===== */
+  --border-xs: 10px;
+  --border-s: 15px;
+  --border-m: 20px;
+  --border-l: 25px;
+  --border-xl: 30px;
+  --border-radius-xs: 4px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 24px;
+  --border-radius-round: 50%;
+
+  /* ===== SPACING ===== */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+
+  /* ===== GAPS ===== */
+  --gap-xs: 8px;
+  --gap-sm: 12px;
+  --gap-md: 16px;
+  --gap-lg: 24px;
+  --gap-xl: 32px;
+  --gap-2xl: 48px;
+
+  /* ===== FONT SIZES ===== */
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 18px;
+  --font-xl: 24px;
+  --font-2xl: 32px;
+  --font-3xl: 48px;
+
+  /* ===== FONT WEIGHTS ===== */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+}

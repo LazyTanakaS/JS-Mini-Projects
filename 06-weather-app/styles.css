@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("./variables.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Popins", sans-serif;
+  font-weight: var(--font-regular);
+  font-size: var(--font-md);
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  min-height: 100vh;
+  padding: var(--spacing-lg);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: var(--font-3xl);
+  font-weight: var(--font-medium);
+}
+
+header p {
+  font-size: var(--font-sm);
+  font-weight: var(--font-semibold);
+}
+
+.find {
+  display: flex;
+  justify-content: center;
+  padding: 15px 45px;
+  gap: var(--gap-md);
+}
+
+.find input[type="text"] {
+  flex: 1;
+  max-width: 500px;
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-md);
+  font-family: "Poppins", sans-serif;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-secondary);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-md);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.find input[type="text"]::placeholder {
+  color: var(--color-text-secondary);
+  opacity: 0.7;
+}
+
+.find input[type="text"]:focus {
+  border-color: var(--color-accent-primary);
+  background-color: var(--color-bg-tertiary);
+  box-shadow: 0 0 0 3px rgba(173, 54, 203, 0.1);
+}
+
+.find input[type="text"]:hover {
+  border-color: var(--color-accent-hover);
+}
+
+.btn-search {
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-size: var(--font-md);
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+  background-color: var(--color-accent-primary);
+  border: none;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-search:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.btn-search:active {
+  transform: translateY(0);
+  box-shadow: var(--box-shadow-sm);
+}
+
+/* Weather card */
+
+.weather-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 425px;
+  width: 820px;
+  margin: 0 auto;
+  background: var(--color-weather-card);
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--box-shadow-xl);
+  margin-bottom: 40px;
+}
+
+/* History Weather */
+
+.recent-weather {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--gap-xs);
+  text-align: center;
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 130px;
+  width: 120px;
+  margin: 0 auto;
+  background: var(--color-weather-history);
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--box-shadow-xl);
+}
