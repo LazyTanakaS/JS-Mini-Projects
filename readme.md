@@ -89,6 +89,29 @@ An elegant iOS-style modal window system with multiple content variations, featu
 
 ---
 
+### 5. 🎨 Color Generator
+
+A modern and interactive color palette generator with smooth animations, color history tracking, and multiple generation methods.
+
+**Key Concepts:**
+
+- Random number generation (`Math.random()`, `Math.floor()`)
+- String manipulation and loops
+- LocalStorage API for persistent history
+- Clipboard API for copying colors
+- CSS Grid layout system
+- Advanced CSS animations (`@keyframes`, `transform`)
+- Animation delays for cascading effects
+- Toast notifications system
+- Keyboard event handling (Spacebar)
+- JSON serialization (`stringify`, `parse`)
+- Array manipulation (`push`, `splice`)
+- Dynamic element creation and styling
+
+[View Project →](./05-color-generator)
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -131,19 +154,24 @@ Through building these projects, I gained hands-on experience with:
 - **CSS Integration**: Manipulating styles and classes via JavaScript
 - **Input Validation**: Ensuring data integrity and user-friendly error handling
 - **LocalStorage API**: Persisting data across browser sessions
-- **Array Methods**: Using `forEach`, `push`, and other array manipulation techniques
+- **Array Methods**: Using `forEach`, `push`, `splice`, and other array manipulation techniques
 - **CSS Animations**: Creating smooth transitions and effects
 - **CSS Variables**: Implementing themeable and maintainable styles
+- **CSS Grid & Flexbox**: Building responsive layouts
 - **CRUD Operations**: Creating, reading, updating, and deleting data
-- **Keyboard Events**: Handling Enter and Escape key interactions
+- **Keyboard Events**: Handling Enter, Escape, and Spacebar key interactions
 - **Modal Systems**: Building accessible overlay interfaces
+- **Clipboard API**: Copying text to clipboard programmatically
+- **Random Generation**: Creating random colors and values
+- **Toast Notifications**: Implementing user feedback systems
 - **Code Organization**: Structuring clean, readable, and maintainable code
 
 ## 🛠️ Technologies Used
 
 - **JavaScript (ES6+)**: Modern JavaScript features and syntax
 - **HTML5**: Semantic markup and structure
-- **CSS3**: Styling, flexbox, and responsive design
+- **CSS3**: Styling, animations, flexbox, grid, and responsive design
+- **Web APIs**: LocalStorage, Clipboard API
 - **Git**: Version control and collaboration
 
 ## 📂 Project Structure
@@ -172,6 +200,13 @@ JS-Mini-Projects/
 │       ├── battery.png
 │       ├── contacts.png
 │       └── frame.png
+├── 05-color-generator/
+│   ├── index.html
+│   ├── styles.css
+│   ├── variables.css
+│   ├── scripts.js
+│   ├── preview.png
+│   └── readme.md
 └── README.md
 ```
 
@@ -183,6 +218,7 @@ These projects are designed to be completed in order, as each builds upon concep
 2. **Tip Calculator** → Form handling and calculations
 3. **Todo List** → Data persistence and CRUD operations
 4. **Modal Window** → Advanced DOM manipulation and animations
+5. **Color Generator** → Random generation, Web APIs, and advanced animations
 
 ## 🤝 Contributing
 
