@@ -1,0 +1,18 @@
+:root {
+  /* COLOR */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #000000;
+  --color-text-tritinary: #2e2e2e;
+
+  --color-bg-primary: #7e6cca;
+  --color-bg-secondary: #dbff8f;
+
+  --box-shadow-primary: rgba(0, 0, 0, 0.2);
+
+  /* BORDERS */
+  --border-xs: 10px;
+  --border-s: 15px;
+  --border-m: 20px;
+  --border-l: 25px;
+  --border-xl: 30px;
+}

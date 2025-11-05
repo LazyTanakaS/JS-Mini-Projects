@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./variables.css" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script src="./scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="colors">
+        <div class="color-item">
+          <div class="color-circle" style="background-color: #fa3d3d"></div>
+          <div class="color-code">#FA3D3D</div>
+        </div>
+
+        <div class="color-item">
+          <div class="color-circle" style="background-color: #3dd8fa"></div>
+          <div class="color-code">#3DD8FA</div>
+        </div>
+      </div>
+
+      <div class="color-content">
+        <button class="btn-generate">Generate color</button>
+        <p>Or just press the "Spacebar" to generate new pallettes</p>
+        <button class="btn-copy">Click to copy individual color</button>
+
+        <div class="color-history"></div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast">Copied to clipboard</div>
+  </body>
+</html>
