@@ -14,33 +14,36 @@
     <header>
       <h1>Weather App</h1>
       <p>Find out the weather by city name</p>
+
+      <div class="theme-switcher">
+        <input
+          type="checkbox"
+          id="theme-toggle"
+          class="theme-toggle-checkbox"
+        />
+        <label for="theme-toggle" class="theme-toggle-label">
+          <span class="theme-toggle-slider"></span>
+        </label>
+      </div>
     </header>
 
     <form class="find">
       <input type="text" placeholder="Find your City" />
-      <button class="btn-search">Search</button>
+      <button class="btn-search" type="button">Search</button>
     </form>
 
     <div class="fails"><p></p></div>
+
+    <div class="loader-container">
+      <div class="loader-spinner">
+        <p>loading weather data...</p>
+      </div>
+    </div>
 
     <div class="weather-card">
       <div class="card"></div>
     </div>
 
-    <div class="recent-weather">
-      <div class="weather"></div>
-
-      <div class="weather"></div>
-
-      <div class="weather"></div>
-
-      <div class="weather"></div>
-
-      <div class="weather"></div>
-
-      <div class="weather"></div>
-
-      <div class="weather"></div>
-    </div>
+    <div class="recent-weather"></div>
   </body>
 </html>

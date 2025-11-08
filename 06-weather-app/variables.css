@@ -15,12 +15,6 @@
   --color-accent-secondary: #33e017;
   --color-accent-hover: #8a2ba3;
 
-  /* ===== COLORS - Status ===== */
-  --color-success: #4caf50;
-  --color-error: #f44336;
-  --color-warning: #ff9800;
-  --color-info: #2196f3;
-
   /* ===== GRADIENTS ===== */
   --color-weather-card: linear-gradient(
     145deg,
@@ -79,6 +73,7 @@
   --font-xl: 24px;
   --font-2xl: 32px;
   --font-3xl: 48px;
+  --font-4xl: 64px;
 
   /* ===== FONT WEIGHTS ===== */
   --font-light: 300;
@@ -86,4 +81,35 @@
   --font-medium: 500;
   --font-semibold: 600;
   --font-bold: 700;
+
+  /* ===== LIGHT THEME ===== */
+
+  body.light-theme {
+    /* backgrounds */
+    --color-bg-primary: #f5f5f5;
+    --color-bg-secondary: #ffffff;
+    --color-bg-tertiary: #e0e0e0;
+
+    /* text color */
+    --color-text-primary: #1a1a1a;
+    --color-text-secondary: #4a4a4a;
+    --color-text-tertiary: #6a6a6a;
+
+    /* color accent */
+    --color-accent-primary: #10c38e;
+    --color-accent-hover: #0ba577;
+
+    /* gradients */
+    --color-weather-card: linear-gradient(
+      145deg,
+      rgba(16, 195, 142, 1) 0%,
+      rgba(14, 132, 148, 1) 100%
+    );
+
+    --color-weather-history: linear-gradient(
+      180deg,
+      rgba(16, 195, 142, 1) 0%,
+      rgba(14, 132, 148, 1) 100%
+    );
+  }
 }
