@@ -1,25 +1,25 @@
-# 🪟 Modal Window
+# Modal Window
 
 An elegant iOS-style modal window system featuring multiple content variations, smooth animations, and professional UI design. Perfect for learning advanced DOM manipulation and CSS animations.
 
-## 📸 Preview
+## Preview
 
 A collection of iOS-inspired modal dialogs with different content types: images, alerts, categories, battery warnings, and contact permissions.
 
-## ✨ Features
+## Features
 
-- 🖼️ **Image Modal**: Display images with notification preview
-- ⚠️ **Alert Modal**: Show spam warnings and alerts
-- 📑 **Categories Modal**: Display multiple notification categories
-- 🔋 **Battery Modal**: Warning about battery-draining apps
-- 👥 **Contacts Modal**: Request contact access permissions
-- 🎭 **Smooth Animations**: Scale and fade transitions
-- ⌨️ **Keyboard Support**: Close modal with Escape key
-- 🖱️ **Backdrop Click**: Close by clicking outside the modal
-- 🚫 **Body Scroll Lock**: Prevent scrolling when modal is open
-- 🎨 **CSS Variables**: Easily customizable theme
+- **Image Modal**: Display images with notification preview
+- **Alert Modal**: Show spam warnings and alerts
+- **Categories Modal**: Display multiple notification categories
+- **Battery Modal**: Warning about battery-draining apps
+- **Contacts Modal**: Request contact access permissions
+- **Smooth Animations**: Scale and fade transitions
+- **Keyboard Support**: Close modal with Escape key
+- **Backdrop Click**: Close by clicking outside the modal
+- **Body Scroll Lock**: Prevent scrolling when modal is open
+- **CSS Variables**: Easily customizable theme
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 This project helped me learn:
 
@@ -32,7 +32,7 @@ This project helped me learn:
 - **State Management**: Managing modal visibility and content state
 - **Accessibility**: Proper focus management and keyboard navigation
 
-## 💻 Code Highlights
+## Code Highlights
 
 ### Key Concepts Demonstrated
 
@@ -96,7 +96,7 @@ overlay.addEventListener("click", (e) => {
 }
 ```
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repository
 2. Navigate to `04-modal-window` folder
@@ -105,13 +105,13 @@ overlay.addEventListener("click", (e) => {
 
 Or use Live Server in VS Code for hot reload.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3 (Variables, Animations, Transitions)
 - Vanilla JavaScript (ES6+)
 
-## 📚 Concepts Covered
+## Concepts Covered
 
 - **Modal Systems**: Creating overlay-based UI components
 - **CSS Animations**: Scale, opacity, and transform transitions
@@ -122,7 +122,7 @@ Or use Live Server in VS Code for hot reload.
 - **Responsive Design**: Flexible layouts with flexbox
 - **State Management**: Controlling modal visibility states
 
-## 🎨 Design Features
+## Design Features
 
 - iOS-style modal design
 - Smooth scale-in animation
@@ -133,7 +133,7 @@ Or use Live Server in VS Code for hot reload.
 - Responsive button sizing
 - Professional spacing and padding
 
-## 📂 File Structure
+## File Structure
 
 ```
 04-modal-window/
@@ -148,7 +148,7 @@ Or use Live Server in VS Code for hot reload.
     └── frame.png
 ```
 
-## 🎓 Advanced Techniques
+## Advanced Techniques
 
 - **Separation of Concerns**: CSS variables in separate file
 - **Reusable Components**: Single modal with dynamic content
@@ -156,7 +156,7 @@ Or use Live Server in VS Code for hot reload.
 - **Performance**: Efficient event handling
 - **User Experience**: Multiple ways to close modal
 
-## 📝 What's Next?
+## What's Next
 
 This is the most advanced project in the series! You've now mastered:
 
@@ -169,4 +169,4 @@ Consider building more complex projects or exploring frameworks like React!
 
 ---
 
-[← Previous: Todo List](../03-todo-list) | [Back to Main Repository](../README.md)
+[Previous: Todo List](../03-todo-list) | [Back to Main Repository](../README.md) | [Next Project: Color Generator](../05-color-generator)

@@ -1,21 +1,21 @@
-# 💰 Tip Calculator
+# Tip Calculator
 
 An interactive tip calculator that helps users calculate tips and total bill amounts with ease. Perfect for learning form handling and mathematical operations in JavaScript.
 
-## 📸 Preview
+## Preview
 
 A user-friendly interface where users input their bill amount and tip percentage to instantly see calculated results.
 
-## ✨ Features
+## Features
 
-- 💵 **Bill Input**: Enter the total bill amount
-- 📊 **Tip Percentage**: Select or input custom tip percentage
-- 🧮 **Instant Calculation**: Real-time tip and total calculation
-- ✅ **Input Validation**: Ensures valid numeric inputs
-- 🎨 **Clean UI**: Intuitive and responsive design
-- 🔄 **Reset Functionality**: Clear all inputs and start fresh
+- **Bill Input**: Enter the total bill amount
+- **Tip Percentage**: Select or input custom tip percentage
+- **Instant Calculation**: Real-time tip and total calculation
+- **Input Validation**: Ensures valid numeric inputs
+- **Clean UI**: Intuitive and responsive design
+- **Reset Functionality**: Clear all inputs and start fresh
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 This project helped me learn:
 
@@ -26,7 +26,7 @@ This project helped me learn:
 - **Data Validation**: Checking for valid inputs and handling errors
 - **User Feedback**: Displaying results and error messages
 
-## 💻 Code Highlights
+## Code Highlights
 
 ### Key Concepts Demonstrated
 
@@ -51,7 +51,7 @@ element.classList.remove("error");
 resultElement.textContent = `$${total.toFixed(2)}`;
 ```
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repository
 2. Navigate to `02-tip-calculator` folder
@@ -59,13 +59,13 @@ resultElement.textContent = `$${total.toFixed(2)}`;
 
 Or use Live Server in VS Code for hot reload.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3
 - Vanilla JavaScript (ES6+)
 
-## 📚 Concepts Covered
+## Concepts Covered
 
 - Input validation
 - Number formatting with `toFixed()`
@@ -74,10 +74,10 @@ Or use Live Server in VS Code for hot reload.
 - DOM manipulation
 - CSS class toggling
 
-## 📝 What's Next?
+## What's Next
 
 After mastering form handling and calculations, move on to the **Todo List** to learn about data persistence and CRUD operations.
 
 ---
 
-[← Previous: Counter](../01-counter) | [Back to Main Repository](../README.md) | [Next Project: Todo List →](../03-todo-list)
+[Previous: Counter](../01-counter) | [Back to Main Repository](../README.md) | [Next Project: Todo List](../03-todo-list)

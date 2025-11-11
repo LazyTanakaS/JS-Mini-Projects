@@ -1,22 +1,22 @@
-# 🔢 Counter
+# Counter
 
 A simple interactive counter application that demonstrates fundamental JavaScript concepts through a clean and intuitive interface.
 
-## 📸 Preview
+## Preview
 
 A minimalist counter with three action buttons for incrementing, decrementing, and resetting the value.
 
-## ✨ Features
+## Features
 
-- ➕ **Increment**: Increase counter by 1
-- ➖ **Decrement**: Decrease counter by 1
-- 🔄 **Reset**: Return counter to 0
-- 🎨 **Dynamic Styling**: Color changes based on counter value
+- **Increment**: Increase counter by 1
+- **Decrement**: Decrease counter by 1
+- **Reset**: Return counter to 0
+- **Dynamic Styling**: Color changes based on counter value
   - Positive numbers: Green
   - Negative numbers: Red
   - Zero: Default color
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 This project helped me learn:
 
@@ -26,7 +26,7 @@ This project helped me learn:
 - **Conditional Logic**: Using `if/else` statements to control program flow
 - **Dynamic Styling**: Changing CSS properties via JavaScript
 
-## 💻 Code Highlights
+## Code Highlights
 
 ### Key Concepts Demonstrated
 
@@ -50,7 +50,7 @@ if (count > 0) {
 }
 ```
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repository
 2. Navigate to `01-counter` folder
@@ -58,16 +58,16 @@ if (count > 0) {
 
 Or use Live Server in VS Code for hot reload.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3
 - Vanilla JavaScript (ES6+)
 
-## 📝 What's Next?
+## What's Next
 
 This is the first project in the series. After mastering these concepts, move on to the **Tip Calculator** to learn about form inputs and mathematical operations.
 
 ---
 
-[← Back to Main Repository](../README.md) | [Next Project: Tip Calculator →](../02-tip-calculator)
+[Back to Main Repository](../README.md) | [Next Project: Tip Calculator](../02-tip-calculator)

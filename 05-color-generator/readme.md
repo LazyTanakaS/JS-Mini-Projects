@@ -2,9 +2,7 @@
 
 A modern and interactive color palette generator with smooth animations and color history tracking.
 
-![Color Generator Preview](preview.png)
-
-## 🎨 Features
+## Features
 
 - **Random Color Generation** - Generate two random HEX colors at once
 - **Multiple Generation Methods**
@@ -19,11 +17,7 @@ A modern and interactive color palette generator with smooth animations and colo
 - **Persistent Storage** - History saved in localStorage
 - **Toast Notifications** - Beautiful notifications when copying colors
 
-## 🚀 Demo
-
-[Live Demo](#) _(Add your deployed link here)_
-
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3 (with CSS Variables, Flexbox, Grid, Animations)
@@ -31,37 +25,38 @@ A modern and interactive color palette generator with smooth animations and colo
 - localStorage API
 - Clipboard API
 
-## 📚 What I Learned
+## What I Learned
 
 This project helped me practice and learn:
 
-- **JavaScript Fundamentals:**
+### JavaScript Fundamentals
 
-  - `Math.random()` and `Math.floor()` for random number generation
-  - String manipulation and loops
-  - Functions and return values
-  - Array methods: `push()`, `splice()`, `forEach()`
+- `Math.random()` and `Math.floor()` for random number generation
+- String manipulation and loops
+- Functions and return values
+- Array methods: `push()`, `splice()`, `forEach()`
 
-- **DOM Manipulation:**
+### DOM Manipulation
 
-  - `querySelector()` and `querySelectorAll()`
-  - Dynamic element creation with `createElement()`
-  - Event listeners: `click`, `keydown`
-  - Modifying styles and content dynamically
+- `querySelector()` and `querySelectorAll()`
+- Dynamic element creation with `createElement()`
+- Event listeners: `click`, `keydown`
+- Modifying styles and content dynamically
 
-- **CSS Animations:**
+### CSS Animations
 
-  - `@keyframes` animations
-  - `transition` properties
-  - `transform` (scale, rotate)
-  - `animation-delay` for cascading effects
+- `@keyframes` animations
+- `transition` properties
+- `transform` (scale, rotate)
+- `animation-delay` for cascading effects
 
-- **Web APIs:**
-  - localStorage for data persistence
-  - Clipboard API for copying text
-  - JSON methods: `stringify()` and `parse()`
+### Web APIs
 
-## 🎯 Key Concepts
+- localStorage for data persistence
+- Clipboard API for copying text
+- JSON methods: `stringify()` and `parse()`
+
+## Key Concepts
 
 ### HEX Color Format
 
@@ -95,7 +90,7 @@ localStorage.setItem("colorHistory", JSON.stringify(colorHistory));
 let colorHistory = JSON.parse(localStorage.getItem("colorHistory")) || [];
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 color-generator/
@@ -107,7 +102,7 @@ color-generator/
 └── README.md          # Project documentation
 ```
 
-## 🎮 How to Use
+## How to Use
 
 1. **Generate Colors:**
 
@@ -124,13 +119,17 @@ color-generator/
    - Your last 8 generated colors are displayed below
    - History persists even after page reload
 
-## 💡 Future Improvements
+## Future Improvements
 
 Potential features to add:
 
-- [ ] Export palette as image
-- [ ] Generate complementary color schemes
-- [ ] Add RGB and HSL format support
-- [ ] Color picker integration
-- [ ] Share palette via URL
-- [ ] Dark/Light theme toggle
+- Export palette as image
+- Generate complementary color schemes
+- Add RGB and HSL format support
+- Color picker integration
+- Share palette via URL
+- Dark/Light theme toggle
+
+---
+
+[Previous: Modal Window](../04-modal-window) | [Back to Main Repository](../README.md) | [Next Project: Weather App](../06-weather-app)

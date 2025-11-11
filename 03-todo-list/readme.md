@@ -1,23 +1,23 @@
-# ✅ Todo List
+# Todo List
 
 A fully functional todo list application with persistent storage, featuring the ability to add, edit, complete, and delete tasks. Perfect for learning data persistence and CRUD operations.
 
-## 📸 Preview
+## Preview
 
 A clean, modern todo list interface with purple accents, custom checkboxes, and a task counter.
 
-## ✨ Features
+## Features
 
-- ➕ **Add Tasks**: Create new todo items
-- ✏️ **Edit Tasks**: Click on any task to edit it inline
-- ☑️ **Complete Tasks**: Mark tasks as done with custom checkboxes
-- 🗑️ **Delete All**: Clear all tasks at once
-- 💾 **Data Persistence**: Tasks saved in LocalStorage
-- 📊 **Task Counter**: Displays total number of tasks
-- ⌨️ **Keyboard Support**: Press Enter to add or save tasks
-- 🎨 **Elegant UI**: Modern design with smooth interactions
+- **Add Tasks**: Create new todo items
+- **Edit Tasks**: Click on any task to edit it inline
+- **Complete Tasks**: Mark tasks as done with custom checkboxes
+- **Delete All**: Clear all tasks at once
+- **Data Persistence**: Tasks saved in LocalStorage
+- **Task Counter**: Displays total number of tasks
+- **Keyboard Support**: Press Enter to add or save tasks
+- **Elegant UI**: Modern design with smooth interactions
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 This project helped me learn:
 
@@ -30,7 +30,7 @@ This project helped me learn:
 - **State Management**: Managing application state with objects
 - **JSON**: Converting between objects and strings
 
-## 💻 Code Highlights
+## Code Highlights
 
 ### Key Concepts Demonstrated
 
@@ -62,7 +62,7 @@ if (event.key === "Enter") {
 todo[index].disabled = !todo[index].disabled;
 ```
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repository
 2. Navigate to `03-todo-list` folder
@@ -70,14 +70,14 @@ todo[index].disabled = !todo[index].disabled;
 
 Or use Live Server in VS Code for hot reload.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3 (Custom checkboxes, Flexbox)
 - Vanilla JavaScript (ES6+)
 - LocalStorage API
 
-## 📚 Concepts Covered
+## Concepts Covered
 
 - **Data Persistence**: Saving data to LocalStorage
 - **CRUD Operations**: Full create, read, update, delete cycle
@@ -87,7 +87,7 @@ Or use Live Server in VS Code for hot reload.
 - **Input Handling**: Preventing empty tasks and trimming whitespace
 - **Dynamic Styling**: Applying styles based on state
 
-## 🎨 Design Features
+## Design Features
 
 - Dark theme (#252525 background)
 - Purple accent color (#6c63ff)
@@ -96,10 +96,10 @@ Or use Live Server in VS Code for hot reload.
 - Scrollable task list with custom styling
 - Responsive button design
 
-## 📝 What's Next?
+## What's Next
 
 After mastering data persistence and CRUD operations, move on to the **Modal Window** to learn about advanced DOM manipulation and animations.
 
 ---
 
-[← Previous: Tip Calculator](../02-tip-calculator) | [Back to Main Repository](../README.md) | [Next Project: Modal Window →](../04-modal-window)
+[Previous: Tip Calculator](../02-tip-calculator) | [Back to Main Repository](../README.md) | [Next Project: Modal Window](../04-modal-window)
