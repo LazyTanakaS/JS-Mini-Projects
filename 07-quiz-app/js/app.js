@@ -7,9 +7,11 @@ const state = {
   settings: {
     amount: 10,
     category: "",
+    categoryName: "",
     difficulty: "easy",
   },
   selectedAnswer: null,
+  timerId: null,
 };
 
 const elements = {
@@ -27,6 +29,8 @@ const elements = {
   questionAmount: document.getElementById("questionAmount"),
   categorySelect: document.getElementById("category"),
   difficultySelect: document.getElementById("difficulty"),
+  historyContainer: document.getElementById("historyContainer"),
+  backBtn: document.getElementById("backBtn"),
 
   //   GAME SCREEN
   questionText: document.getElementById("questionText"),
@@ -34,12 +38,14 @@ const elements = {
   progressInfo: document.getElementById("progressInfo"),
   answersContainer: document.getElementById("answersContainer"),
   nextBtn: document.getElementById("nextBtn"),
+  timer: document.getElementById("timer"),
 };
 
 document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   loadCategories();
   setupEventListeners();
+  displayHistory();
 });
 
 // EVENT LISTENERS
@@ -52,6 +58,9 @@ function setupEventListeners() {
 
   // Next button
   elements.nextBtn.addEventListener("click", handleNextQuestion);
+
+  // Back button
+  elements.backBtn.addEventListener("click", handleBackButton);
 }
 
 // THEME MANAGEMENT
@@ -96,6 +105,7 @@ function populateCategoryDropdown() {
     const option = document.createElement("option");
     option.value = category.id;
     option.textContent = category.name;
+    option.setAttribute("data-category-name", category.name);
     elements.categorySelect.appendChild(option);
   });
 }
@@ -106,6 +116,12 @@ function handleSetupSubmit(e) {
 
   state.settings.amount = elements.questionAmount.value;
   state.settings.category = elements.categorySelect.value;
+
+  const selectedOption =
+    elements.categorySelect.options[elements.categorySelect.selectedIndex];
+  state.settings.categoryName =
+    selectedOption.getAttribute("data-category-name") || "Any Category";
+
   state.settings.difficulty = elements.difficultySelect.value;
 
   console.log("Quiz settings", state.settings);
@@ -132,6 +148,8 @@ function handleAnswersClick(selectedAnswer, buttonElement) {
     button.disabled = true;
     button.classList.remove("selected");
   });
+
+  clearInterval(state.timerId);
 
   const isCorrect = selectedAnswer === correctAnswer;
 
@@ -241,8 +259,7 @@ function displayQuestion() {
 
   elements.nextBtn.style.display = "none";
   state.selectedAnswer = null;
-
-  console.log(currentQuestion);
+  startTimer();
 }
 
 // HANDLE NEXT QUESTION
@@ -259,6 +276,7 @@ function handleNextQuestion() {
 // SHOW RESULTS
 function showResults() {
   showScreen("resultScreen");
+  saveResult();
 
   const resultContainer = document
     .getElementById("resultScreen")
@@ -266,7 +284,6 @@ function showResults() {
   const percentage = Math.round((state.score / state.questions.length) * 100);
 
   let message = "";
-  let emoji = "";
 
   if (percentage === 100) {
     message = "Perfect! You're a genius! 🎉";
@@ -291,4 +308,113 @@ function showResults() {
       <button class="btn btn-primary" onclick="location.reload()">Try Again</button>
     </div>
   `;
+}
+
+// TIMER
+
+function startTimer() {
+  let timerLeft = 30;
+
+  elements.timer.textContent = `Time: ${timerLeft}`;
+
+  state.timerId = setInterval(() => {
+    timerLeft--;
+    elements.timer.textContent = `Time: ${timerLeft}`;
+
+    if (timerLeft === 0) {
+      clearInterval(state.timerId);
+      handleTimeOut();
+    }
+  }, 1000);
+}
+
+function handleTimeOut() {
+  const currentQuestion = state.questions[state.currentQuestionIndex];
+  const correctAnswer = currentQuestion.correct_answer;
+  const allAnswersButtons = document.querySelectorAll(".answer-btn");
+
+  allAnswersButtons.forEach((button) => {
+    button.disabled = true;
+  });
+
+  allAnswersButtons.forEach((button) => {
+    if (button.textContent === correctAnswer) {
+      button.classList.add("correct");
+    }
+  });
+
+  state.userAnswers.push({
+    question: currentQuestion.question,
+    selectedAnswer: null,
+    correctAnswer: correctAnswer,
+    isCorrect: false,
+  });
+
+  elements.nextBtn.style.display = "block";
+}
+
+// HISTORY
+function saveResult() {
+  const newResult = {
+    score: state.score,
+    total: state.questions.length,
+    percentage: Math.round((state.score / state.questions.length) * 100),
+    date: new Date().toISOString(),
+    category: state.settings.categoryName || "Any Category",
+    difficulty: state.settings.difficulty,
+  };
+
+  const historyString = localStorage.getItem("quiz-history");
+  const history = historyString ? JSON.parse(historyString) : [];
+
+  history.push(newResult);
+  localStorage.setItem("quiz-history", JSON.stringify(history));
+}
+
+function displayHistory() {
+  const historyString = localStorage.getItem("quiz-history");
+
+  if (!historyString) {
+    elements.historyContainer.innerHTML =
+      '<p class="no-history">No history yet. Start your first quiz!</p>';
+    return;
+  }
+
+  const history = JSON.parse(historyString);
+  const recentHistory = history.slice(-4).reverse();
+
+  elements.historyContainer.innerHTML = "";
+
+  recentHistory.forEach((result) => {
+    const date = new Date(result.date);
+    const formattedDate = new Intl.DateTimeFormat("cs-CZ").format(date);
+
+    const card = document.createElement("div");
+    card.className = "history-card";
+    card.innerHTML = `
+      <div class="history-score">${result.score}/${result.total}</div>
+      <div class="history-percentage">${result.percentage}%</div>
+      <div class="history-details">
+        <span>${result.category || "Any Category"}</span>
+        <span>${result.difficulty}</span>
+        <span>${formattedDate}</span>
+      </div>
+    `;
+
+    elements.historyContainer.appendChild(card);
+  });
+}
+
+// BACK BUTTON
+
+function handleBackButton() {
+  clearInterval(state.timerId);
+
+  state.currentQuestionIndex = 0;
+  state.score = 0;
+  state.questions = [];
+  state.userAnswers = [];
+  state.selectedAnswer = null;
+
+  showScreen("setupScreen");
 }

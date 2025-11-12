@@ -102,6 +102,26 @@ Real-time weather application with search and history features.
 
 ---
 
+### 7. Learning Quiz
+
+Interactive trivia quiz with multiple categories, timer, and score tracking.
+
+**Learned:**
+
+- Single Page Application (SPA) architecture
+- Advanced state management
+- Timer implementation (setInterval/clearInterval)
+- Complex API integration
+- Array methods (.map, .filter, .slice, .reverse)
+- HTML entity decoding
+- LocalStorage for history persistence
+- Dynamic screen switching
+- Closures and scope management
+
+**[View Project](./07-quiz-app)**
+
+---
+
 ## How to Use
 
 1. Clone the repository
