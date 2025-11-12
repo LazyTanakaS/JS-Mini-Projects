@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Quiz</title>
+
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Theme toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="theme-icon" id="theme-icon">🌙</span>
+    </button>
+
+    <section id="setupScreen" class="screen active">
+      <div class="container">
+        <h1>Learning Quiz</h1>
+        <p class="subtitle">Test your knowledge across various topics</p>
+
+        <form id="setupForm" class="setup-form">
+          <div class="form-group">
+            <label for="questionAmount">Number of Questions</label>
+            <input
+              type="number"
+              min="5"
+              max="50"
+              value="10"
+              id="questionAmount"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" required>
+              <option value="">Loading categories</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="difficulty">Difficulty</label>
+            <select id="difficulty" required>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Start Quiz</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Game Screen -->
+    <section id="gameScreen" class="screen">
+      <div class="container">
+        <div class="game-screen">
+          <div class="game-header">
+            <button class="back-btn" id="backBtn">&lt;</button>
+            <div class="timer" id="timer"><p>Time: 30s</p></div>
+            <div class="progress-info" id="progressInfo"><p>1/10</p></div>
+          </div>
+
+          <div class="question-text" id="questionText"></div>
+
+          <div class="question-category" id="questionCategory"></div>
+
+          <div class="answers-container" id="answersContainer"></div>
+
+          <button class="btn btn-next" id="nextBtn" style="display: none">
+            Next Question
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Result Screen -->
+    <section id="resultScreen" class="screen">
+      <div class="container">
+        <div class="result-container">
+          <!-- Контент будет добавлен через JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
