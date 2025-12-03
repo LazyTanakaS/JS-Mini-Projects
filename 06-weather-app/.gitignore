@@ -1,0 +1,17 @@
+# API Keys и конфиденциальные данные
+config.js
+
+# Environment variables
+.env
+.env.local
+
+# Node modules (если будете использовать)
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

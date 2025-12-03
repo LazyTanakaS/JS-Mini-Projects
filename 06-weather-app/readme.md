@@ -2,6 +2,37 @@
 
 A real-time weather application that fetches current weather data using the OpenWeatherMap API. Features include city search, search history, and theme switching.
 
+## Setup Instructions
+
+### 1. Get Your API Key
+
+- Go to [OpenWeatherMap](https://openweathermap.org/api)
+- Sign up for a free account
+- Get your API key from the dashboard
+
+### 2. Configure the App
+
+- Copy `config.example.js` to `config.js`:
+
+  ```bash
+  cp config.example.js config.js
+  ```
+
+- Open `config.js` and replace `your_api_key_here` with your actual API key:
+
+  ```javascript
+  const CONFIG = {
+    WEATHER_API_KEY: "your_actual_api_key_here",
+  };
+  ```
+
+### 3. Run the App
+
+- Open `index.html` in your browser
+- Start searching for weather!
+
+**⚠️ Important**: Never commit `config.js` to git! It's already in `.gitignore`.
+
 ## Features
 
 - **Real-time Weather Data**: Get current weather information for any city
@@ -12,6 +43,12 @@ A real-time weather application that fetches current weather data using the Open
 - **Error Handling**: User-friendly error messages for invalid cities or network issues
 
 ## What I Learned
+
+### API Security
+
+- Keeping API keys secure
+- Using configuration files
+- .gitignore best practices
 
 ### API Integration
 

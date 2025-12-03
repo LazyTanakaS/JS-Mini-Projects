@@ -23,7 +23,7 @@ input.addEventListener("keypress", (e) => {
 });
 
 async function getWeather(city) {
-  const API_KEY = "2bf632463de4345398201828abeaf646";
+  const API_KEY = CONFIG.WEATHER_API_KEY;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric&lang=eng`;
 
   showLoading();
