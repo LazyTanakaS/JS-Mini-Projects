@@ -8,15 +8,15 @@ A collection of vanilla JavaScript projects demonstrating core JS fundamentals w
 
 ## 📋 Projects Overview
 
-| #   | Project                                 | Key Concepts             | Complexity |
-| --- | --------------------------------------- | ------------------------ | ---------- |
-| 7   | 🧠 [Quiz App](#-quiz-app)               | SPA, API, Timer, State   | ⭐⭐⭐⭐⭐ |
-| 6   | 🌤️ [Weather App](#-weather-app)         | API, Async/Await, Themes | ⭐⭐⭐⭐   |
-| 5   | 🎨 [Color Generator](#-color-generator) | Arrays, Clipboard API    | ⭐⭐⭐     |
-| 4   | 🪟 [Modal Window](#-modal-window)       | Events, DOM, Keyboard    | ⭐⭐       |
-| 3   | ✅ [Todo List](#-todo-list)             | localStorage, CRUD       | ⭐⭐⭐     |
-| 2   | 💰 [Tip Calculator](#-tip-calculator)   | Forms, Validation        | ⭐⭐       |
-| 1   | 🔢 [Counter](#-counter)                 | DOM, Events, State       | ⭐         |
+| #   | Project                                 | Key Concepts             | Live Demo                                                                  |
+| --- | --------------------------------------- | ------------------------ | -------------------------------------------------------------------------- |
+| 7   | 🧠 [Quiz App](#-quiz-app)               | SPA, API, Timer, State   | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/07-quiz-app/)        |
+| 6   | 🌤️ [Weather App](#-weather-app)         | API, Async/Await, Themes | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/06-weather-app/)     |
+| 5   | 🎨 [Color Generator](#-color-generator) | Arrays, Clipboard API    | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/05-color-generator/) |
+| 4   | 🪟 [Modal Window](#-modal-window)       | Events, DOM, Keyboard    | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/04-modal-window/)    |
+| 3   | ✅ [Todo List](#-todo-list)             | localStorage, CRUD       | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/03-todo-list/)       |
+| 2   | 💰 [Tip Calculator](#-tip-calculator)   | Forms, Validation        | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/02-tip-calculator/)  |
+| 1   | 🔢 [Counter](#-counter)                 | DOM, Events, State       | [Demo](https://lazytanakas.github.io/JS-Mini-Projects/01-counter/)         |
 
 ---
 
