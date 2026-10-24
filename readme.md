@@ -243,7 +243,7 @@ Quiz App (SPA architecture)
 
 ## 👤 Author
 
-**Petro Komar**  
+**Petr Komar**  
 Junior Frontend Developer
 
 - GitHub: [@LazyTanakaS](https://github.com/LazyTanakaS)
